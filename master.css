@@ -1,0 +1,139 @@
+@font-face {
+  font-family: "Sofia Pro";
+  font-weight: normal;
+  src: url("fonts/Sofia Pro Regular.otf");
+}
+
+html,
+body {
+  margin: 0;
+}
+
+#Ultra {
+  font-family: "Sofia Pro";
+}
+
+#Ultra .flex-container-fluid {
+  max-width: 1920px;
+  margin: 0 auto;
+  background: #e1e1e1;
+}
+
+#Ultra .flex-container {
+  max-width: 1180px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+#Ultra .flex-container .flex-row {
+  display: flex;
+}
+
+#Ultra .flex-container .flex-row .flex-col {
+  flex: 1;
+}
+
+#Ultra .flex-container .justify-end {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#Ultra .flex-container .align-center {
+  align-items: center !important;
+}
+
+#Ultra h1 {
+  font-size: 2.2em;
+  text-transform: uppercase;
+}
+
+#Ultra p {
+  font-size: 1em;
+}
+
+#Ultra mark {
+  background-color: #ebebeb;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+
+#Ultra img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#Ultra button {
+  background: #00bacd;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#Ultra .content {
+  margin-bottom: 4rem;
+  margin-left: 1rem;
+}
+
+#Ultra .white-text {
+  color: #fff;
+  text-shadow: 0 0 100px #aaa;
+  -webkit-font-smoothing: antialiased;
+  font-size: 4em;
+  position: relative;
+  left: -50px;
+}
+
+#Ultra .last-col {
+  transform: translateY(0px);
+}
+
+#Ultra .max-height-fluid {
+  max-height: 450px;
+}
+
+#Ultra a {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1px) and (max-width: 1080px) {
+  #Ultra .flex-row {
+    flex-direction: column;
+  }
+  #Ultra .white-text {
+    left: 0;
+    font-size: 15vw;
+  }
+  #Ultra h1 {
+    font-size: 8vw;
+    text-align: center;
+    background: #ebebeb;
+  }
+  #Ultra .content {
+    margin-left: 0;
+    text-align: center;
+  }
+  #Ultra .content p {
+    font-size: 4vw;
+    text-align: left;
+    padding: 0 15px;
+  }
+  #Ultra button {
+    font-size: 3vw;
+  }
+  #Ultra .last-col {
+    transform: translateY(-120px);
+  }
+  #Ultra .last-col img {
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  #Ultra .max-height-fluid {
+    max-height: 110vw;
+  }
+}
+/*# sourceMappingURL=master.css.map */
